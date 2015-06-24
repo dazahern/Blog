@@ -27,7 +27,7 @@ Post.create ([
 		title: 				"Hello Them",
 		body: 				"lorum ipsum",
 		publication: 		"The Steer Blog",
-		author:				"Daz Ahern",
+		author:				"GOVUK",
 		pull_quote:  		"dolor sit...",
 		published_at:  		3.weeks.ago		
 	}

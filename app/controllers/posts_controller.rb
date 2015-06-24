@@ -3,10 +3,14 @@ class PostsController < ApplicationController
   before_action :find_post, except: [:index, :new, :create]
 
   def index
+    if params[:author].present?
+      @posts = Post.from_param(params[:author])
+      else
     # We assigned an instance variable
   	@posts = Post.all 
   	# Rails sends it to the view (index)
   	# Rails renders the view (index)
+    end
   end
 
   def show
