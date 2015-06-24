@@ -54,6 +54,9 @@
 		<div class="post__comment">
 		<%= simple_format comment.body %> 
 		<p><small><%= time_ago_in_words comment.created_at %> ago. </small></p>
+
+		<small> <%= link_to "Remove comment", post_comment_path(@post, comment), method: :delete %>  </small>
+
 	<% end %>
 </section>
 
