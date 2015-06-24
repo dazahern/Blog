@@ -11,9 +11,11 @@ class PostsController < ApplicationController
 
   def show
   	# We assigne and isntance variable
-  	
   	# Rails sends it to the view if its there (show)
   	# Rails renders the view (show)
+
+    # Look for comments in this post
+    @comments = @post.comments.all
   end
 
   def new

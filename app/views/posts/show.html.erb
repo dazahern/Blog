@@ -40,6 +40,12 @@
 
 <section class="post__body">
 	<%= simple_format @post.body %>
+
+	<h3>Comments</h3>
+	<hr>
+	<%= @comments.each do |comment| %>
+
+	<% end %>
 </section>
 
 

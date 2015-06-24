@@ -33,3 +33,9 @@ Post.create ([
 	}
 
 	])
+
+
+
+post = Post.last
+
+post.comments.create({body: "This is a primary example of why I hate you. You suck and so does this hello world shit"})
